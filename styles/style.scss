@@ -1,0 +1,61 @@
+@import url(../node_modules/normalize.css/normalize.css);
+@import url(./variables.scss);
+
+
+$main-color: #FF3E79;
+$addition-color: #EAEAEA;
+$secondary-color: #41F6D7;  
+
+
+
+#app {
+   width: 100%;
+   font-family: "Roboto", sans-serif;
+   font-weight: 400;
+   color: white;
+}
+
+
+.header{
+  padding: 15px;
+  max-height: 88px;
+  border-bottom: $secondary-color 2px solid;
+  &__navigation{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+  }
+  &__list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+
+
+
+  &__separator{
+    min-width: 2px;
+    height: 32px;
+    background-color: $addition-color;
+    margin-left: px;
+  }
+
+}
+
+
+.nav__button{
+  width: 40px;
+  height: 40px;
+  background-color: $main-color;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__navigation--logo {
+  
+}
