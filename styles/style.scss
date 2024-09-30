@@ -1,10 +1,9 @@
 @import url(../node_modules/normalize.css/normalize.css);
 @import url(./variables.scss);
 
-
 $main-color: #FF3E79;
 $addition-color: #EAEAEA;
-$secondary-color: #41F6D7;  
+$secondary-color: #D9FFF5;  
 
 
 
@@ -13,17 +12,20 @@ $secondary-color: #41F6D7;
    font-family: "Roboto", sans-serif;
    font-weight: 400;
    color: white;
+   flex-shrink: 0;
 }
 
 
 .header{
   padding: 15px;
   max-height: 88px;
-  border-bottom: $secondary-color 2px solid;
+  border-bottom: $secondary-color 1px solid;
+  flex-shrink: 0;
   &__navigation{ 
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-shrink: 0;
 
 
   }
@@ -31,17 +33,16 @@ $secondary-color: #41F6D7;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: 15px;
+    flex-shrink: 0;
   }
-
-
-
 
   &__separator{
     min-width: 2px;
     height: 32px;
     background-color: $addition-color;
-    margin-left: px;
+    margin-left: 25px;
+    flex-shrink: 0;
   }
 
 }
@@ -55,7 +56,30 @@ $secondary-color: #41F6D7;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
+  
 }
 .header__navigation--logo {
   
+}
+
+.main_title {
+  display: flex;
+  color: #181c21;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main_list {
+  display: flex;
+  border: 2px #B8FFEC solid;
+  border-radius: 6px;
+  width: 246px;
+  height: 40px;
+  h2 {
+    color: #181c21;
+    display: flex;
+    font-size: 15px;
+    padding-left: 10px;
+    opacity: calc(0.4);
+  }
 }
