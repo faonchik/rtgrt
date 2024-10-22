@@ -2,112 +2,369 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./styles/style.scss">
+    <link rel="stylesheet" href="./styles/global.scss">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CPS_demo</title>
-  </head>
-  <body>
-    <div id="app">
-      <div class="main_content">
-        <header class="header">
-          <div class="header__navigation">
-             <div class="header__burger--button nav__button">
-          <img src="./assets/burger__lines.svg" alt="">
-        </div>
-        <img class="header__navigation--logo" src="./assets/logo.svg" alt="Логотип">
-        
-        <div class="header__separator"></div>
-        <ul class="header__list">
-          <li class="header__list--item nav__button"><a href="">
-            <img src="./assets/repair__item.svg" alt="">
-          </a></li>
-          <li class="header__list--item nav__button"><a href="">
-            <img src="./assets/search__item.svg" alt="">
-           </a></li>
-        </ul>
-      </div>
-    </div>
-
-
-
-
     
-    <div class="main_title">
-      <h1>Услуги и сервисы</h1>
+    <!-- Подключение стилей Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+      <body>
+        <div id="app">
+          <div class="main">
+            <div class="header">
+              <div class="header__nav">
+                <ul class="header__nav--list">
+                  <div class="header__left-side">
+                    <li>
+                      <a href="#" class="button">
+                        <img src="./public/burger.svg" alt="burger" />
+                      </a>
+                    </li>
+                    <li><div class="line__logo"></div></li>
+                    <li>
+                      <a href="#">
+                        <img src="./public/logo.svg" alt="logo" />
+                      </a>
+                    </li>
+                  </div>
+                  <div class="header__action">
+                    <div class="header__Cent">
+                      <li>
+                        <a href="#" class="button">
+                          <img src="./public/call.svg" alt="call" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="button">
+                          <img src="./public/chat.svg" alt="chat" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="button">
+                          <img src="./public/profile.svg" alt="profile" />
+                        </a>
+                      </li>
+                    </div>
+                    <div class="line__profile"></div>
+                    <div class="button__right">
+                      <li>
+                        <a href="#" class="button">
+                          <img src="/public/repair.svg" alt="repair" />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="button">
+                          <img src="/public/checkstatus.svg" alt="checkstatus" />
+                        </a>
+                      </li>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+              <div class="heading">
+                <div class="separator">
+                  <hr />
+                </div>
+              </div>
+            </div>
           </div>
-    
-          <div class="main__menu--slider">
-            <div class="main__menu--slider--item">
-             <input
+        </div>
+
+        <div class="main_title">
+          <h1>Услуги и сервисы</h1>
+        </div>
+
+        <div class="main__menu--slider">
+          <div class="main__menu--slider--item">
+            <input
               class="main__menu--slider-radio-button"
               type="radio"
               id="radio__brands"
               name="selector"
               checked
-             />
-             <label for="radio__brands" class="main__menu--slider--item-label">
+            />
+            <label for="radio__brands" class="main__menu--slider--item-label">
               <p>Ремонтируемые бренды</p>
-             </label>
-            </div>
-            <div class="main__menu--slider--item">
-             <input
+            </label>
+          </div>
+          <div class="main__menu--slider--item">
+            <input
               class="main__menu--slider-radio-button"
               type="radio"
               id="radio__devices"
               name="selector"
-             />
-             <label for="radio__devices" class="main__menu--slider--item-label">
+            />
+            <label for="radio__devices" class="main__menu--slider--item-label">
               <p>Дополнительные услуги</p>
-             </label>
-            </div>
-            <div class="main__menu--slider--item">
-             <input
+            </label>
+          </div>
+          <div class="main__menu--slider--item">
+            <input
               class="main__menu--slider-radio-button"
               type="radio"
               id="radio__services"
               name="selector"
-             />
-             <label for="radio__services" class="main__menu--slider--item-label">
+            />
+            <label for="radio__services" class="main__menu--slider--item-label">
               <p>Цены на&nbsp;услуги</p>
-             </label>
-            </div>
-            <div class="main__menu--slider--item">
-             <input
+            </label>
+          </div>
+          <div class="main__menu--slider--item">
+            <input
               class="main__menu--slider-radio-button"
               type="radio"
               id="radio__address"
               name="selector"
-             />
-             <label for="radio__address" class="main__menu--slider--item-label">
+            />
+            <label for="radio__address" class="main__menu--slider--item-label">
               <p>Адреса сервисных центров</p>
-             </label>
-            </div>
-            <div class="main__menu--slider--item">
-             <input
+            </label>
+          </div>
+          <div class="main__menu--slider--item">
+            <input
               class="main__menu--slider-radio-button"
               type="radio"
               id="radio__prices"
               name="selector"
-             />
-             <label for="radio__prices" class="main__menu--slider--item-label">
+            />
+            <label for="radio__prices" class="main__menu--slider--item-label">
               <p>Специальные цены</p>
-             </label>
-            </div>
-            <div class="main__menu--slider--item">
-             <input
+            </label>
+          </div>
+          <div class="main__menu--slider--item">
+            <input
               class="main__menu--slider-radio-button"
               type="radio"
               id="radio__feedback"
               name="selector"
-             />
-             <label for="radio__feedback" class="main__menu--slider--item-label">
+            />
+            <label for="radio__feedback" class="main__menu--slider--item-label">
               <p>Отзывы</p>
-             </label>
-            </div>
-           </div>
+            </label>
+          </div>
+        </div>
 
-    <div class="main_content">
+        <div class="content_gap">
+          <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+            Только у нас вы можете отремонтировать свой ноутбук Dell
+            с официальной гарантией производителя.</p>
+        </div>
 
+        <div class="ReadMore">
+          <p>Читать далее</p>
+        </div>
+        <div class="Arrows_ReadMore"> <!-- Не получается сделать 2 стрелки слева от текста -->
+          <div content_svg>
+            <img src="./Picture Copy.svg" alt="">
+          </div>
+        </div>
+
+        <div class="brands">
+          <p>Ремонт техники различных брендов</p>
+        </div>
+
+
+
+        <!---------------------------- Окна  Swiper------------------------ -->
+  <body>
+    <div id="app">
+      <!-- Slider main container -->
+      <div class="swiper custom-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper custom-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide custom-slide">
+            <img src="./public/Lenovo.png" alt="Lenovo" />
+            <img src="./public/go.svg" alt="Go" />
+          </div>
+          <div class="swiper-slide custom-slide">
+            <img src="./public/Samsung.png" alt="Samsung" />
+            <img src="./public/go.svg" alt="Go" />
+          </div>
+          <div class="swiper-slide custom-slide">
+            <img src="" alt="Apple" />
+            <img src="./public/go.svg" alt="Go" />
+          </div>
+          <div class="swiper-slide custom-slide">
+            <img src="./public/ViewSonic.png" alt="ViewSonic" />
+            <img src="./public/go.svg" alt="Go" />
+          </div>
+          <div class="swiper-slide custom-slide">
+            <img src="./public/Bosch.png" alt="Bosch" />
+            <img src="./public/go.svg" alt="Go" />
+          </div>
+          <div class="swiper-slide custom-slide">
+            <img src="" alt="HP" />
+            <img src="./public/go.svg" alt="Go" />
+          </div>
+          <div class="swiper-slide custom-slide">
+            <img src="./public/Acer.png" alt="Acer" />
+            <img src="./public/go.svg" alt="Go" />
+          </div>
+          <div class="swiper-slide custom-slide">
+            <img src="./public/Sony.png" alt="Sony" />
+            <img src="./public/go.svg" alt="Go" />
+          </div>
+        </div>
+
+        <!-- Пагинация -->
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
+
+    <!-- Подключение скрипта Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Инициализация Swiper -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var swiper = new Swiper(".custom-swiper", {
+          loop: false, // Зацикливает слайды
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      });
+    </script>
   </body>
 </html>
+
+          <div class="types_Technique">
+            <p>Ремонт различных видов техники</p>
+          </div>
+
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div class="Prices_services">
+                <p>Цены на услуги</p>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div class="swiper123"></div>
+              <div class="swiper-wrapper1212"></div>
+              <div class="swiper-slide323">
+                <p>Ремонтные услуги</p>
+                <p> Тестирование с выдачей технического заключения</p>
+                <p>Цена</p>
+                <p>Бесплатно</p>
+                <p>Срок</p>
+                <p>30-120 мин</p>
+                <img src="/public/Rectangle.svg" alt="">
+              </div>
+
+              <div class="">
+                <p>Ремонтные услуги</p>
+                <p>Диагностика</p>
+                <p>Цена</p>
+                <p>Бесплатно</p>
+                <p>Срок</p>
+                <p>30 мин</p>
+                <img src="/public/Rectangle.svg"   alt="">
+              </div>
+
+              <div class="">
+                <p>Ремонтные услуги</p>
+                <p>Замена дисплея</p>
+                <p>Цена</p>
+                <p>1 000 ₽</p>
+                <p>Срок</p>
+                <p>30-120 мин</p>
+                <img src="/public/Rectangle.svg" alt="">
+              </div>
+
+              <div class="">
+                <p>Ремонтные услуги</p>
+                <p>Замена полифонического динамика</p>
+                <p>Цена</p>
+                <p>1 000 ₽</p>
+                <p>Срок</p>
+                <p>30-120 мин</p>
+                <img src="/public/Rectangle.svg" alt="">
+              </div>
+
+              <div class="">
+                <p>Ремонтные услуги</p>
+                <p>Замена программного обеспечения</p>
+                <p>Цена</p>
+                <p>1 000 ₽</p>
+                <p>Срок</p>
+                <p>30-120 мин</p>
+                <img src="/public/Rectangle.svg" alt="">
+              </div>
+
+
+              <div class="Information_services ">
+                <p>Все цены указаны с учетом НДС. 
+                  Стоимость ремонта указана на единичную услугу. 
+                  Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.</p>
+              </div>
+
+              <div class="Get_offer">
+                <p>Получить коммерческое предложение</p>
+              </div>
+              
+              <div class="Basement">
+                <p>© 2019 CPS Разработано командой Apesong </p>
+                <p>Политика конфиденциальности</p>
+                <P>Информация, размещенная на данной странице, не является публичной офертой</P>
+              </div>
+          
+
+
+           <!-- Подключение скриптов Swiper -->
+            
+           
+           
+           <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+
+  
+          </body>
+    </html>

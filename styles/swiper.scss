@@ -1,0 +1,39 @@
+
+//Servises-swiper-------------------------B
+.service__swiper-slide{
+    position: relative;
+    max-width: 240px !important;
+    min-height: 160px;
+    max-height: 160px !important;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid gray;
+    padding: 12px;
+    margin-left: 26px;
+}
+
+.service__swiper-slide--img{
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+}
+
+.service__swiper-slide {
+    display: flex;
+    color: #0028f2;
+    font-size: 16px; 
+    font-family: Roboto; 
+    font-weight: 900; 
+    line-height: 24px; 
+    word-wrap: break-word
+  }
+
+
+
+  .service__swiper-slide img {
+    margin-left: 200px;
+    top: 40px;
+  }
+
+
+
