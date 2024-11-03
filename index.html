@@ -153,13 +153,9 @@
             с официальной гарантией производителя.</p>
         </div>
 
-        <div class="ReadMore">
+        <div class="ReadMore"> <!-- flex space-between gap 8px -->
+          <img src="./public/Arrow.svg" alt="" srcset="">
           <p>Читать далее</p>
-        </div>
-        <div class="Arrows_ReadMore"> <!-- Не получается сделать 2 стрелки слева от текста -->
-          <div content_svg>
-            <img src="./Picture Copy.svg" alt="">
-          </div>
         </div>
 
         <div class="brands">
@@ -210,26 +206,15 @@
           </div>
         </div>
 
-        <!-- Пагинация -->
-        <div class="swiper-pagination"></div>
-      </div>
-    </div>
 
+      <!-- Пагинация -->
+      <div class="swiper-pagination"></div>
+    </div>
+    
     <!-- Подключение скрипта Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <!-- Инициализация Swiper -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var swiper = new Swiper(".custom-swiper", {
-          loop: false, // Зацикливает слайды
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-        });
-      });
-    </script>
   </body>
 </html>
 
@@ -237,6 +222,30 @@
             <p>Ремонт различных видов техники</p>
           </div>
 
+          <body>
+            <div id="app">
+              <!-- Slider main container -->
+              <div class="swiper-technique">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                  <p>Ремонт ноутбуков </p>
+                    <img src="./public/go.svg" alt="Go" />
+                  </div>
+                  <div class="swiper-slide technique-slide">
+                  <p>Ремонт планшетов </p>
+                    <img src="./public/go.svg" alt="Go" />
+                  </div>
+                  <div class="swiper-slide technique-slide">
+                  <p>Ремонт ПК </p>
+                    <img src="./public/go.svg" alt="Go" />
+                  </div>
+                  <div class="swiper-slide technique-slide">
+                  <p>Ремонт  мониторов </p>
+                    <img src="./public/go.svg" alt="Go" />
+                  </div>
+                </div>
               
 
 
@@ -365,6 +374,6 @@
 
 
 
-  
+           <script type="module" src="main.js"></script>
           </body>
     </html>
